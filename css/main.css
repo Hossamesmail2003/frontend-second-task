@@ -1,7 +1,3 @@
-@import url("./card-module.css");
-@import url("./plan-module.css");
-@import url("./button-module.css");
-
 body {
     margin: 0;
     padding: 0;
@@ -13,4 +9,118 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.card {
+    background-color: hsl(225, 100%, 98%);
+    width: 100%;
+    max-width: 375px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    /* Ensures the card handles overflow properly */
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h1 {
+    color: hsl(223, 47%, 23%);
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.card p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.button {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 20px 20px;
+    font-size: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: hsl(245, 75%, 60%);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(223, 100%, 97%);
+    /* Slightly lighter pale blue */
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 20px 20px;
+    border: 3px;
+    border-radius: 15px;
+}
+
+.plan-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.plan h2 {
+    color: hsl(223, 47%, 23%);
+    font-size: 18px;
+    margin: 0;
+}
+
+.plan p {
+    color: hsl(224, 23%, 55%);
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+.plan a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 16px;
 }
